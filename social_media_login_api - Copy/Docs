@@ -12,3 +12,13 @@
 3 give you site url fo google
 4 now use this google id and secret key in your code for authentication
 5 create an callback url where after authentication google will redirect you you also need you give this url in google developer 
+
+# Flow Summary
+1 User clicks the Facebook or Google login button on index.html.
+2 The JavaScript function redirects the user to /auth/facebook or /auth/google.
+3 The respective route initiates the Passport authentication flow.
+4 The user is redirected to Facebook or Google to log in.
+5 Upon successful login, Facebook or Google redirects the user back to the callback URL (/auth/facebook/callback or /auth/google/callback).
+6 Passport processes the callback, retrieves the user profile, and stores the login information.
+7 If authentication is successful, the user is redirected to /auth/protected where their information is displayed.
+8 If authentication fails, the user is redirected to /auth/failure.
