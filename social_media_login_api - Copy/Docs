@@ -1,0 +1,14 @@
+#Facebook
+1 create an faceboook developer accountb 
+2 create an facebook app to generate app id and secret key.
+3 give you site url fo facebook
+4 now use this facebook id and secret key in your code for authentication
+5 create an callback url where after authentication facebook will redirect you no  need to vive this url on facebook 
+
+# google 
+
+1 create an google developer account
+2 create an google app to generate app id and secret key.
+3 give you site url fo google
+4 now use this google id and secret key in your code for authentication
+5 create an callback url where after authentication google will redirect you you also need you give this url in google developer 

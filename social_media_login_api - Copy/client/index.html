@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <!-- Update form action to point to the login route -->
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+        <div class="social-logins">
+            <!-- Add onclick events to social login buttons -->
+            <button class="social-button facebook" onclick="loginWithFacebook()"><i class="fab fa-facebook-f"></i></button>
+            <button class="social-button google" onclick="loginWithGoogle()"><i class="fab fa-google"></i></button>
+            <!-- If you implement Apple authentication, add a similar button -->
+        </div>
+    </div>
+
+    <!-- JavaScript for handling social login clicks -->
+    <script>
+        function loginWithFacebook() {
+            // Redirect to Facebook authentication route
+            window.location.href = '/auth/facebook';
+        }
+
+        function loginWithGoogle() {
+            // Redirect to Google authentication route
+            window.location.href = '/auth/google';
+        }
+    </script>
+</body>
+</html>
